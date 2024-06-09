@@ -31,7 +31,7 @@ public class UserElasticRepositoryImpl implements UserElasticRepository {
     
 	public UserElasticRepositoryImpl(RestHighLevelClient elasticHighClient, ObjectMapper objectMapper) {
 		this.elasticHighClient = elasticHighClient;
-		this.objectMapper = new ObjectMapper();
+		this.objectMapper = objectMapper;
 	}
     
 	@Override
